@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@keyframes word-slide {
+  0% {
+    transform: translateY(60px) rotateX(90deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) rotateX(0deg);
+    opacity: 1;
+  }
+}
+
+.animate-word-slide {
+  animation: word-slide 0.8s ease-out forwards;
+  animation-fill-mode: both;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(100%) translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-in {
+  animation: slide-in 0.5s ease-out forwards;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 1.5s infinite linear;
+}
+
+
